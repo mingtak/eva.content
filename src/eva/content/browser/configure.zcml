@@ -18,4 +18,15 @@
       directory="static"
       />
 
+  <!-- Browser -->
+
+  <!-- Cover View -->
+  <browser:page
+      name="cover_view"
+      class=".views.CoverView"
+      permission="zope2.View"
+      layer="eva.content.interfaces.IEvaContentLayer"
+      for="*"
+      />
+
 </configure>

@@ -333,10 +333,12 @@ footer{
 }
 .eight-linebox {
 	width:100%;
-	border-bottom: 4px solid #00a651;
-	padding-bottom:2em;
+/*	border-bottom: 4px solid #00a651;
+	padding-bottom:2em; */
+        padding: 50px;
 	display:inline-block;
 }
+
 .eight-photo {
 	width:43.5%;
 	float:left;
@@ -368,11 +370,13 @@ footer{
 .eight-bottom{
 	width:100%;
 	text-align:center;
+        margin-top: 20px;
 	padding:25px 0 0 0;
 	display:inline-block;
 	font-size:25px;
 	font-weight:bold;
 	color:#0d6d39;
+        border-top: 4px solid #00a651;
 }
 .eight-btn{
 	text-align:center;
