@@ -1,0 +1,4 @@
+graft src/eva
+graft docs
+include *.rst
+global-exclude *.pyc

@@ -1,0 +1,6 @@
+[report]
+include =
+    src/eva/*
+omit =
+    */test*
+    */upgrades/*
