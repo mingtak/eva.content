@@ -37,4 +37,20 @@
       for="*"
       />
 
+  <browser:page
+      name="again"
+      class=".views.Again"
+      permission="zope2.View"
+      layer="eva.content.interfaces.IEvaContentLayer"
+      for="*"
+      />
+
+  <browser:page
+      name="user_list"
+      class=".views.UserList"
+      permission='zope2.View'
+      layer="eva.content.interfaces.IEvaContentLayer"
+      for="*"
+      />
+
 </configure>

@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<?python
+from plone import api
+portal = api.portal.get()
+?>
+
+
+
+<head>
+<meta charset="utf-8">
+<title>長榮北中南天天飛 去澳門嚐好味</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+<link rel="shortcut icon" href="${portal/absolute_url}/images/favicon.ico" />
+<link href="${portal/absolute_url}/++plone++eva.content/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="${portal/absolute_url}/++plone++eva.content/css/css.css" rel="stylesheet" type="text/css">
+<link href="https://file.myfontastic.com/S35DUwYmK65fFFQsBc9P2W/icons.css" rel="stylesheet">
+
+<script src="${portal/absolute_url}/++plone++eva.content/js/jquery.min.js"></script> 
+<script src="${portal/absolute_url}/++plone++eva.content/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body>
+<header><div class="container">
+<div class="menu">
+	<ul class="menu menubar">
+    <li><a href="#" id="menu_access"><i class="icon-icon-tableware"></i> 澳門八大美食式</a></li>
+    <li><a href="#" id="menu_blogger"><i class="icon-icon-tableware"></i> 活動辦法</a></li>
+    <li><a href="#" id="menu_event"><i class="icon-icon-tableware"></i> 長榮北中南天天飛</a></li>
+	</ul>
+</div>
+</div></header>
+
+<div class="black-screen"><div class="container">
+<div class="eight-types">
+<!-- <div class="eight-close"><a href="#"><img src="images/close.png" width="100%"></a></div> -->
+<div class="eight-container">
+<div class="eight-region">
+	選出你的最佳出發地點
+    <input class="where" type="submit" name="button" id="button" value="桃園">
+    <input class="where" type="submit" name="button2" id="button" value="台中">
+    <input class="where" type="submit" name="button3" id="button" value="高雄">
+</div>
+
+<div class="eight-bottom sign-form">
+抽獎填寫資料
+
+<form action="${portal/absolute_url}/@@sign" method="get">
+<div class="eight-data">姓 名<input id='name' name="name" type="text" required></div>
+<div class="eight-data">電 話<input id='tel' name="tel" type="text" required></div>
+<div class="eight-data">Email<input id='email' name="email" type="email" required></div>
+<input type="text" name="where" id="where" value="" hidden>
+<div class="eight-btn">
+    <!--<input type="submit" name="submit" id="submit" value="確認送出">-->
+    <a id="submit" href="javascript:void(0)">確認送出</a>
+</div>
+</form>
+</div>
+</div></div>
+</div></div>
+
+<script>
+$(document).ready(function(){
+    $('#submit').click(function(){
+        if( !($('#name').val() && $('#tel').val() && $('#email').val() &&  $('#where').val()) ){
+            alert('請選擇出發地點並填寫所有欄位')
+        }else{
+            data = {name: $('#name').val(),
+                    tel: $('#tel').val(),
+                    email: $('#email').val(),
+                    where: $('#where').val()
+                   }
+            $.post('${portal/absolute_url}/@@sign', data=data)
+                .done(function(res){
+                    if(res=='true'){
+//                        alert('已完成資料登錄，祝您中大獎')
+                        window.location.href = '${portal/absolute_url}/@@again'
+                    }
+                    if(res=='1'){
+                        alert('請選擇出發地點並填寫所有欄位')
+                    }else if(res=='2'){
+                        alert('您的email已登錄過')
+                    }
+                }).fail(function(){
+                    alert('資料傳送失敗，請稍候再試')
+                })
+        }
+    })
+
+
+
+    $('.where').click(function(){
+        $('#where').val($(this).val())
+        $('.where').css('background-color', '#28ab64')
+        $(this).css('background-color', '#0d6d39')
+    })
+})
+
+
+</script>
+
+
+
+<footer>
+<div class="container">
+<a href="#" target="_blank"><img src="images/logo-eva.gif" width="100%" class="logo-eva"></a>
+<a href="#" target="_blank"><img src="images/logo-macau.gif" width="100%" class="logo-macau"></a>
+</div>
+</footer>
+</body>
+</html>
