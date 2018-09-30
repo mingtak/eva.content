@@ -623,3 +623,20 @@ footer{
 /* new */
 .award-z-top {z-index:100}
 #foods-detail {display:none}
+
+.eight-bottom.sign-form {
+    border-top: initial;
+}
+
+.eight-btn #submit {
+    width: auto;
+    font-size: 30px;
+    color: #FFF;
+    text-shadow: 5px 5px 10px #000;
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 20px 35px;
+    margin: 0 10px;
+}

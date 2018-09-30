@@ -29,4 +29,12 @@
       for="*"
       />
 
+  <browser:page
+      name="sign"
+      class=".views.Sign"
+      permission="zope2.View"
+      layer="eva.content.interfaces.IEvaContentLayer"
+      for="*"
+      />
+
 </configure>
