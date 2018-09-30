@@ -9,7 +9,7 @@ portal = api.portal.get()
 
 url = []
 for i in range(9):
-    url.append( '%s?detail=%s' % (portal.absolute_url(), i) )
+    url.append( '%s?detail_=%s' % (portal.absolute_url(), i) )
 ?>
 
 <head>
@@ -31,7 +31,8 @@ for i in range(9):
 <meta name="webcrawlers" content="all" />
 <meta name="spiders" content="all" />
 <meta name="revisit-after" content="7 days"/>
-<meta property="og:image" content="${portal/absolute_url}/images/food/${python:view.request.get('detail')}">
+<!-- <meta property="og:image" content="${portal/absolute_url}/images/food/${python:view.request.get('detail')}"> -->
+<meta property="og:image" content="${portal/absolute_url}/images/fbshare.jpg">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126465431-1"></script>
@@ -70,15 +71,69 @@ function MM_swapImage() { //v3.0
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
 </script>
+
+
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PKPKLMZ');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '237267096800648');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=237267096800648&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKPKLMZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script type="text/javascript">
+  var _fout_queue = _fout_queue || {}; if (_fout_queue.segment === void 0) _fout_queue.segment = {};
+  if (_fout_queue.segment.queue === void 0) _fout_queue.segment.queue = [];
+
+  _fout_queue.segment.queue.push({
+    'user_id': 28224,
+    'advertiser_id': 11252,
+    'contractor_id': 5
+  });
+
+  (function() {
+    var el = document.createElement('script'); el.type = 'text/javascript'; el.async = true;
+    el.src = (('https:' == document.location.protocol) ? 'https://' : 'http://') + 'js.fout.jp/segmentation.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(el, s);
+  })();
+</script>
+
+
+
+
 <header><div class="container">
 <div class="menu">
 	<ul class="menu menubar">
-    <li><a href="#" id="menu_video"><i class="icon-icon-tableware"></i> 澳門八大美食式</a></li>
-    <li><a href="#" id="menu_method"><i class="icon-icon-tableware"></i> 活動辦法</a></li>
-    <li><a href="#" id="menu_travel"><i class="icon-icon-tableware"></i> 長榮北中南天天飛</a></li>
+    <li><a href="${portal/absolute_url}#video" id="menu_video"><i class="icon-icon-tableware"></i> 澳門八大美食式</a></li>
+    <li><a href="${portal/absolute_url}#method" id="menu_method"><i class="icon-icon-tableware"></i> 活動辦法</a></li>
+    <li><a href="${portal/absolute_url}#travel" id="menu_event"><i class="icon-icon-tableware"></i> 長榮北中南天天飛</a></li>
 	</ul>
 </div>
 </div></header>
@@ -96,14 +151,13 @@ function MM_swapImage() { //v3.0
 
 
 <div class="round-table" id="ta-img">
-<!-- <a href="http://www.google.com" target="_blank"><h1>eeeee</h1></a> -->
 <img src="images/round-table.png" width="100%" class="img-responsive" usemap="#planetmap">
 
 <map name="planetmap">
     <area id='food-1' class='food' shape="circle" coords="" href="#detail-1" alt="地道式">
     <area id='food-2' class='food' shape="circle" coords="" href="#detail-2" alt="手信式">
     <area id='food-3' class='food' shape="circle" coords="" href="#detail-3" alt="寫意式">
-    <area id='food-4' class='food' shape="circle" coords="" href="#detail-4" alt="米芝蓮式">
+    <area id='food-4' class='food' shape="circle" coords="" href="#detail-4" alt="米其林式">
     <area id='food-5' class='food' shape="circle" coords="" href="#detail-5" alt="節日盛事式">
     <area id='food-6' class='food' shape="circle" coords="" href="#detail-6" alt="經典回味式">
     <area id='food-7' class='food' shape="circle" coords="" href="#detail-7" alt="大廚式">
@@ -116,7 +170,7 @@ foodSize = [
     [772, 272, 110, 100], // 地道式
     [772, 108, 270, 100], // 手信式
     [772, 108, 500, 100], // 寫意式
-    [772, 272, 660, 100], // 米芝蓮式
+    [772, 272, 660, 100], // 米其林式
     [772, 500, 660, 100], // 節日盛事式
     [772, 662, 499, 100], // 經典回味式
     [772, 660, 270, 100], // 大廚式
@@ -188,7 +242,7 @@ $(document).ready(function(){
 <div class="method-titletext">活動期間：107年10月1日起至107年10月12日24:00止</div>
 <div class="step">
 <div class="step-round"><div class="step-round-font">Step1</div>
-<div class="step-round-text">選出上述一道你最愛的澳門美食式<span>大廚式 / 土生菜式 / 地道式 / 經典回味式 / 手信式 / 寫意式 / 節日盛事式 / 米芝蓮式</span></div>
+<div class="step-round-text">選出上述一道你最愛的澳門美食式<span>大廚式 / 土生菜式 / 地道式 / 經典回味式 / 手信式 / 寫意式 / 節日盛事式 / 米其林式</span></div>
 </div>
 <div class="step-round"><div class="step-round-font">Step2</div>
 <div class="step-round-text">公開分享至Facebook就有機會送你去澳門嚐好味!</div>
@@ -234,8 +288,8 @@ $(document).ready(function(){
 
 <footer>
 <div class="container">
-<a href="#" target="_blank"><img src="images/logo-eva.gif" width="100%" class="logo-eva"></a>
-<a href="#" target="_blank"><img src="images/logo-macau.gif" width="100%" class="logo-macau"></a>
+<a href="https://www.evaair.com/zh-tw/index.html" target="_blank"><img src="images/logo-eva.gif" width="100%" class="logo-eva"></a>
+<a href="http://zh.macaotourism.gov.mo/index.php" target="_blank"><img src="images/logo-macau.gif" width="100%" class="logo-macau"></a>
 </div>
 </footer>
 

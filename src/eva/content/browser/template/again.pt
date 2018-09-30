@@ -42,15 +42,68 @@ function MM_swapImage() { //v3.0
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
 </script>
+
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PKPKLMZ');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '237267096800648');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=237267096800648&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKPKLMZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script type="text/javascript">
+  var _fout_queue = _fout_queue || {}; if (_fout_queue.segment === void 0) _fout_queue.segment = {};
+  if (_fout_queue.segment.queue === void 0) _fout_queue.segment.queue = [];
+
+  _fout_queue.segment.queue.push({
+    'user_id': 28224,
+    'advertiser_id': 11252,
+    'contractor_id': 5
+  });
+
+  (function() {
+    var el = document.createElement('script'); el.type = 'text/javascript'; el.async = true;
+    el.src = (('https:' == document.location.protocol) ? 'https://' : 'http://') + 'js.fout.jp/segmentation.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(el, s);
+  })();
+</script>                        
+
+
+
+ 
+
 <header><div class="container">
 <div class="menu">
 	<ul class="menu menubar">
-    <li><a href="#" id="menu_access"><i class="icon-icon-tableware"></i> 澳門八大美食式</a></li>
-    <li><a href="#" id="menu_blogger"><i class="icon-icon-tableware"></i> 活動辦法</a></li>
-    <li><a href="#" id="menu_event"><i class="icon-icon-tableware"></i> 長榮北中南天天飛</a></li>
+    <li><a href="${portal/absolute_url}#video" id="menu_video"><i class="icon-icon-tableware"></i> 澳門八大美食式</a></li>
+    <li><a href="${portal/absolute_url}#method" id="menu_method"><i class="icon-icon-tableware"></i> 活動辦法</a></li>
+    <li><a href="${portal/absolute_url}#travel" id="menu_event"><i class="icon-icon-tableware"></i> 長榮北中南天天飛</a></li>
 	</ul>
 </div>
 </div></header>
@@ -85,6 +138,7 @@ fbButton.addEventListener('click', function() {
         'facebook-share-dialog',
         'width=800,height=600'
     );
+    window.location.href = '${python:portal.absolute_url()}#travel'
     return false;
 });
 
@@ -104,8 +158,8 @@ window.location.href="about:blank";
 
 <footer>
 <div class="container">
-<a href="#" target="_blank"><img src="images/logo-eva.gif" width="100%" class="logo-eva"></a>
-<a href="#" target="_blank"><img src="images/logo-macau.gif" width="100%" class="logo-macau"></a>
+<a href="https://www.evaair.com/zh-tw/index.html" target="_blank"><img src="images/logo-eva.gif" width="100%" class="logo-eva"></a>
+<a href="http://zh.macaotourism.gov.mo/index.php" target="_blank"><img src="images/logo-macau.gif" width="100%" class="logo-macau"></a>
 </div>
 </footer>
 </body>
