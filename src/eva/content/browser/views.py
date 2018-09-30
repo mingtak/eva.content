@@ -8,6 +8,7 @@ from plone.protect.interfaces import IDisableCSRFProtection
 from zope.interface import alsoProvides
 from DateTime import DateTime
 
+import random
 import logging
 
 
@@ -16,6 +17,10 @@ class CoverView(BrowserView):
     """ Cover View """
 
     template = ViewPageTemplateFile("template/cover_view.pt")
+
+    def getRandomStr(self):
+        return ''.join(random.sample('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', 6))
+
 
     def __call__(self):
         portal = api.portal.get()

@@ -1,10 +1,17 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 <?python
 from plone import api
-import random
 portal = api.portal.get()
+
+url = []
+for i in range(9):
+    url.append( '%s?detail=%s' % (portal.absolute_url(), i) )
 ?>
+
 <head>
 <meta charset="utf-8">
 <title>長榮北中南天天飛，去澳門嚐好味 easy go！</title>
@@ -24,6 +31,7 @@ portal = api.portal.get()
 <meta name="webcrawlers" content="all" />
 <meta name="spiders" content="all" />
 <meta name="revisit-after" content="7 days"/>
+<meta property="og:image" content="${portal/absolute_url}/images/food/${python:view.request.get('detail')}">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126465431-1"></script>
@@ -241,7 +249,6 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
     //Examples of how to assign the Colorbox event to elements
-debugger;
     if($(window).width() > 780){
         $(".food").colorbox({inline:true, width:"90%"});
     }else{
@@ -261,7 +268,7 @@ debugger;
   </div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-<div class="eight-btn"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+<div class="eight-btn" id="fb-share-button-7"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
 </div>
 </div>
 
@@ -270,7 +277,7 @@ debugger;
 葡萄牙人統治所帶來的文化交融，也展現在澳門的飲食文化裡。當年在澳門落地生根甚至通婚的葡萄牙人後代，被稱為「土生葡人」，他們發展出糅合中葡菜特色的澳門菜，加上運用東南亞及印度的香料，如咖哩、椰汁、丁香、肉桂等來烹調，演變為獨一無二「澳門土生菜」。經典菜式有葡國雞、葡國血鴨、咖喱蟹、蒜蓉辣大蝦、碳烤牛肋骨、紅酒繪牛尾、紅豆豬手、沙甸魚和馬介休等，是到澳門遊玩必吃的美食選項之一。</div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-<div class="eight-btn"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+<div class="eight-btn" id="fb-share-button-8"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
 </div>
 </div>
 
@@ -280,7 +287,7 @@ debugger;
 小小的澳門擁有眾多的米其林餐廳，在2018年的指南中一共收編65間各有特色的餐廳。在全球只有大約一百家餐廳的三星餐廳，澳門就有2間，還有5間二星以及11間一星餐廳，必比登推介餐廳也有9間；餐飲菜系相當多元，包括 : 中式、法式、日式、澳菜、印度菜色等，品嘗米其林美食絕對是來澳門不可錯過的美食體驗。</div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-<div class="eight-btn"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+<div class="eight-btn" id="fb-share-button-4"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
 </div>
 </div>
 
@@ -291,7 +298,7 @@ debugger;
 </div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-<div class="eight-btn"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+<div class="eight-btn" id="fb-share-button-1"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
 </div>
 </div>
 
@@ -301,7 +308,7 @@ debugger;
 享用澳門美食可以很自在，在建築古蹟巷道中、在現代化都市叢林裡、在美麗的海灘旁，帶著各式特色小吃，一邊欣賞美景一邊品嚐美食，隨興愜意。尤其澳門是葡式蛋撻發源地，融合了蛋香、奶香和焦糖香於一體的蛋撻，一口咬下，酥皮鬆脆中交融著香滑甜軟的濃郁蛋奶香，充滿著滿滿的幸福口感。</div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-<div class="eight-btn"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+<div class="eight-btn" id="fb-share-button-3"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
 </div>
 </div>
 
@@ -312,7 +319,7 @@ debugger;
 ，最能品味在地澳門人的生活況味。</div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-<div class="eight-btn"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+<div class="eight-btn" id="fb-share-button-6"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
 </div>
 </div>
 
@@ -325,7 +332,7 @@ debugger;
 </div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-    <div class="eight-btn"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+    <div class="eight-btn" id="fb-share-button-5"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
 </div>
 </div>
 
@@ -338,7 +345,33 @@ debugger;
 </div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-  <div class="eight-btn"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+  <div class="eight-btn" id="fb-share-button-2">
+      <a class="share-fb" href="#?q=${view/getRandomStr}">我想去澳門嚐好味!</a>
+  </div>
+
+
+
+<script>
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+<tal:js repeat="sn python:range(8)">
+var fbButton_${repeat/sn/number} = document.getElementById('fb-share-button-${repeat/sn/number}');
+fbButton_${repeat/sn/number}.addEventListener('click', async function() {
+    window.open('https://www.facebook.com/sharer/sharer.php?u=${python:url[int(sn)+1]}',
+        'facebook-share-dialog',
+        'width=800,height=600'
+    );
+    await sleep(5000);
+    alert('填寫資料抽獎去')
+    window.location.href = '${python:portal.absolute_url()}/@@sign'
+    return false;
+});
+</tal:js>
+</script>
+
+
 </div>
 </div>
 
