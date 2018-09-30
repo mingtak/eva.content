@@ -130,6 +130,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <header><div class="container">
 <div class="menu">
+<a id="menuopen" href="javascript:void(0)" style="font-size:20px;color:#fff"><i class="icon-icon-tableware"></i>展開</a>
+<script>
+$(document).ready(function(){
+    if(window.width < 640){
+        $('ul.menu.menubar').hide()
+        $('#menuopen').click(function(){
+            $('ul.menu.menubar').slideToggle('slow')
+        })
+    }else{
+        $('#menuopen').hide()
+    }
+
+
+})
+</script>
 	<ul class="menu menubar">
     <li><a href="${portal/absolute_url}#video" id="menu_video"><i class="icon-icon-tableware"></i> 澳門八大美食式</a></li>
     <li><a href="${portal/absolute_url}#method" id="menu_method"><i class="icon-icon-tableware"></i> 活動辦法</a></li>
@@ -282,10 +297,17 @@ $(document).ready(function(){
 </div></div>
 
 <!-- +++++ #toTop +++++ -->
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<a href="javascript:void(0)" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
                 <!-- /// #toTop /// -->
+<script>
+  $('#toTop').click(function(){
+    $('html, body').animate({scrollTop : 0},800);
+    return false;
+  });
+</script>
+<!--
 <script src="jquery/toTop/toTop.min.js"></script>
-
+-->
 <footer>
 <div class="container">
 <a href="https://www.evaair.com/zh-tw/index.html" target="_blank"><img src="images/logo-eva.gif" width="100%" class="logo-eva"></a>
