@@ -21,7 +21,7 @@ for i in range(9):
 <link href="${portal/absolute_url}/++plone++eva.content/css/css.css" rel="stylesheet" type="text/css">
 <link href="${portal/absolute_url}/++plone++eva.content/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link href="https://file.myfontastic.com/S35DUwYmK65fFFQsBc9P2W/icons.css" rel="stylesheet">
-<meta name="Description" content="2018澳門美食年，八大美食式上菜啦！長榮北中南天天飛澳門，想吃好味說走就走！ 快來選出最想品嚐的澳門美食，長榮送你去！  "/>
+<meta name="Description" content="澳門八大美食式，食神也難忘！想到澳門吃好味，長榮送你去！"/>
 <meta name="Keywords" content=" 澳門,澳門美食年,澳門美食,周末,澳門旅遊,出國,渡假,葡式料理,機票,長榮航空,EVA,直飛,票價,折扣,超值優惠,經濟艙,優惠機票,優惠,假期,觀光,周末旅遊,優惠促銷,美食,旅遊,購物,出國,小旅行,自由行,桃園出發,台中出發,高雄出發,小港機場,清泉崗機場,澳門機場,澳門賭場,3天2夜,機加酒,攻略,懶人包,澳門必買,澳門必吃,澳門餐廳"/>
 <meta name="robots" content="all" />
 <meta name="googlebot" content="all" />
@@ -32,7 +32,8 @@ for i in range(9):
 <meta name="spiders" content="all" />
 <meta name="revisit-after" content="7 days"/>
 <!-- <meta property="og:image" content="${portal/absolute_url}/images/food/${python:view.request.get('detail')}"> -->
-<meta property="og:image" content="${portal/absolute_url}/images/fbshare.jpg">
+<meta property="og:image" content="${portal/absolute_url}/images/fbshare.jpg"/>
+<meta property="og:description" content="澳門八大美食式，食神也難忘！想到澳門吃好味，長榮送你去！"/>
 
 <!-- Global site tag (gtag.js) - Google Analytics --> 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126747303-1"></script> 
@@ -131,7 +132,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header><div class="container">
 <div class="menu">
 <!--
-<a id="menuopen" href="javascript:void(0)" style="font-size:20px;color:#fff"><i class="icon-icon-tableware"></i>展開</a>
 <script>
 $(document).ready(function(){
     if(window.width < 640){
@@ -147,6 +147,7 @@ $(document).ready(function(){
 })
 </script>
 -->
+<a id="menuopen" href="javascript:void(0)" style="font-size:20px;color:#fff"><i class="icon-icon-tableware"></i>展開</a>
 	<ul class="menu menubar">
     <li><a href="${portal/absolute_url}#video" id="menu_video"><i class="icon-icon-tableware"></i> 感受澳門美食式</a></li>
     <li><a href="${portal/absolute_url}#method" id="menu_method"><i class="icon-icon-tableware"></i> 活動辦法</a></li>
@@ -167,6 +168,7 @@ $(document).ready(function(){
 <!-- <canvas id="canvas" ></canvas> -->
 
 
+<img src="images/finger.png" class="finger" style="position:absolute; right:0%; width: 15%">
 <div class="round-table" id="ta-img">
 <img src="images/round-table.png" width="100%" class="img-responsive" usemap="#planetmap">
 
@@ -291,20 +293,20 @@ $(document).ready(function(){
 <div class="method-title"><span class="method-title">長榮北中南天天飛澳門  想吃好味 說走就走~</span></div>
 <div class="travel-region">
 <div class="travel-region-title">台北-澳門</div>
-<div class="travel-links"><a href="http://bit.ly/2NHiJSH" target="_blank">雄獅旅遊 02-87939669</a><a href="http://bit.ly/2Du1UWE" target="_blank">可樂旅遊 02-2567-2626</a></div>
+<div class="travel-links"><a href="http://bit.ly/2NHiJSH" target="_blank">雄獅旅遊 (02)8793-9669</a><a href="http://bit.ly/2Du1UWE" target="_blank">可樂旅遊 (02)2567-2626</a></div>
 </div>
 <div class="travel-region">
 <div class="travel-region-title">台中-澳門</div>
 <div class="travel-links">
-<a href="http://bit.ly/2xEMcTb" target="_blank">五福旅遊 04-23266111</a><a href="http://bit.ly/2zvnsy7" target="_blank">雄獅旅遊 04-2415-9888</a><a href="http://bit.ly/2DtQqCI" target="_blank">喜鴻旅遊 04-2326-5722 </a><a href="http://bit.ly/2OV69Mp" target="_blank">易遊網 04-2328-7778</a>
-<a href="http://bit.ly/2NEkgJ6" target="_blank">大安旅遊 04-2295-2117</a><a href="http://bit.ly/2Q35TuO" target="_blank">新魅力旅遊 04-2319-5047</a><a href="http://bit.ly/2ORnjdu" target="_blank">星捷飛旅遊 (04)-2310-9466</a><a href="http://bit.ly/2IgcRd1" target="_blank">昱欣旅行社 04-833-3565</a>
-<a href="http://bit.ly/2N0QAAZ" target="_blank">泰元旅行社 04-2231-2555 </a><a href="http://bit.ly/2xNKNsQ" target="_blank">中天旅行社 04-2310-5353</a></div>
+<a href="http://bit.ly/2xEMcTb" target="_blank">五福旅遊 (04)2326-6111</a><a href="http://bit.ly/2zvnsy7" target="_blank">雄獅旅遊 (04)2415-9888</a><a href="http://bit.ly/2DtQqCI" target="_blank">喜鴻旅遊 (04)2326-5722 </a><a href="http://bit.ly/2OV69Mp" target="_blank">易遊網 (04)2328-7778</a>
+<a href="http://bit.ly/2NEkgJ6" target="_blank">大安旅遊 (04)2295-2117</a><a href="http://bit.ly/2Q35TuO" target="_blank">新魅力旅遊 (04)2319-5047</a><a href="http://bit.ly/2ORnjdu" target="_blank">星捷飛旅遊 (04)2310-9466</a><a href="http://bit.ly/2IgcRd1" target="_blank">昱欣旅行社 (04)833-3565</a>
+<a href="http://bit.ly/2N0QAAZ" target="_blank">泰元旅行社 (04)2231-2555 </a><a href="http://bit.ly/2xNKNsQ" target="_blank">中天旅行社 (04)2310-5353</a></div>
 </div>
 <div class="travel-region">
 <div class="travel-region-title">高雄-澳門</div>
-<div class="travel-links"><a href="http://bit.ly/2xHQPMl" target="_blank">雄獅旅遊 07-2137799</a>
-<a href="http://bit.ly/2OamRKy" target="_blank">可樂旅遊 07-412-8111</a>
-<a href="http://bit.ly/2OOsZVL" target="_blank">東南旅遊 07-412-8688</a></div>
+<div class="travel-links"><a href="http://bit.ly/2xHQPMl" target="_blank">雄獅旅遊 (07)213-7799</a>
+<a href="http://bit.ly/2OamRKy" target="_blank">可樂旅遊 (07)412-8111</a>
+<a href="http://bit.ly/2OOsZVL" target="_blank">東南旅遊 (07)412-8688</a></div>
 </div>
 </div></div>
 
