@@ -148,7 +148,7 @@ $(document).ready(function(){
 </script>
 -->
 	<ul class="menu menubar">
-    <li><a href="${portal/absolute_url}#video" id="menu_video"><i class="icon-icon-tableware"></i> 澳門八大美食式</a></li>
+    <li><a href="${portal/absolute_url}#video" id="menu_video"><i class="icon-icon-tableware"></i> 感受澳門美食式</a></li>
     <li><a href="${portal/absolute_url}#method" id="menu_method"><i class="icon-icon-tableware"></i> 活動辦法</a></li>
     <li><a href="${portal/absolute_url}#travel" id="menu_event"><i class="icon-icon-tableware"></i> 長榮北中南天天飛</a></li>
 	</ul>
@@ -274,7 +274,7 @@ $(document).ready(function(){
 
 <div class="video" id="video">
 <div class="video-container">
-<iframe width="640" height="360" src="https://www.youtube.com/embed/tv3IQdSLs4c" frameborder="0" allow="autoplay; encrypted-media" showinfo="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/95-aEtOsXlE" frameborder="0" allow="autoplay; encrypted-media" showinfo="0" allowfullscreen></iframe>
 </div></div>
 
 <div class="travel" id="travel"><div class="container">
