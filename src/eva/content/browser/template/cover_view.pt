@@ -131,24 +131,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <header><div class="container">
 <div class="menu">
-<!--
 <script>
+/*
 $(document).ready(function(){
-    if(window.width < 640){
-        $('ul.menu.menubar').hide()
+    if(window.width <= 640){
+        $('ul#full-menu').hide()
+        $('#menuopen').show()
         $('#menuopen').click(function(){
-            $('ul.menu.menubar').slideToggle('slow')
+            $("#menuopen").colorbox({inline:true, width:"90%"});
+        })
+        $('.rwd-menu').click(function(){
+            $.colorbox.close();
+            window.location.href = $(this).attr('href')
+ //  debugger
         })
     }else{
         $('#menuopen').hide()
     }
-
-
-})
+})*/
 </script>
--->
-<a id="menuopen" href="javascript:void(0)" style="font-size:20px;color:#fff"><i class="icon-icon-tableware"></i>展開</a>
-	<ul class="menu menubar">
+	<ul class="menu menubar" id="full-menu">
     <li><a href="${portal/absolute_url}#video" id="menu_video"><i class="icon-icon-tableware"></i> 感受澳門美食式</a></li>
     <li><a href="${portal/absolute_url}#method" id="menu_method"><i class="icon-icon-tableware"></i> 活動辦法</a></li>
     <li><a href="${portal/absolute_url}#travel" id="menu_event"><i class="icon-icon-tableware"></i> 長榮北中南天天飛</a></li>

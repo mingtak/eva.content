@@ -643,9 +643,11 @@ footer{
     .banner{position: relative;}
     .menubar > li > a {
         float: left;
-        font-size: 16px;
+        font-size: 13px;
+        padding: 5px;
+        height: 30px;
     }
-    .title{
-        top: 10%;
-    }
+    #full-menu{ padding-left: 15px }
+    .title{ top: 10%; }
+    header{height: 40px;}
 }
