@@ -534,8 +534,8 @@ footer{
 }
 .banner {position:initial}
 .title{
-/*	position: absolute; */
-        position: relative;
+        position: absolute;
+/*        position: relative; */
         z-index: 1000;
 	float:left;
 	top:7%;
@@ -637,4 +637,15 @@ footer{
     display: inline-block;
     padding: 20px 35px;
     margin: 0 10px;
+}
+
+@media(max-width:640px){
+    .banner{position: relative;}
+    .menubar > li > a {
+        float: left;
+        font-size: 16px;
+    }
+    .title{
+        top: 10%;
+    }
 }
