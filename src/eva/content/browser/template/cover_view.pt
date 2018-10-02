@@ -151,17 +151,6 @@ $(document).ready(function(){
 })*/
 </script>
 	<ul class="menu menubar" id="full-menu">
-<span id='window-size' style="float:right; color:#fff">點我看尺寸</span>
-<script>
-$(document).ready(function(){
-$('#window-size').click(function(){
-size = window.width
-$('#window-size').text(size)
-
-})
-
-})
-</script>
     <li><a href="${portal/absolute_url}#video" id="menu_video"><i class="icon-icon-tableware"></i> 感受澳門美食式</a></li>
     <li><a href="${portal/absolute_url}#method" id="menu_method"><i class="icon-icon-tableware"></i> 活動辦法</a></li>
     <li><a href="${portal/absolute_url}#travel" id="menu_event"><i class="icon-icon-tableware"></i> 長榮北中南天天飛</a></li>
