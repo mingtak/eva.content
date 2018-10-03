@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+<?python
+from plone import api
+portal = api.portal.get()
+?>
+<head>
+<meta charset="utf-8">
+<title>長榮北中南天天飛，去澳門嚐好味 easy go！</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link href="https://file.myfontastic.com/S35DUwYmK65fFFQsBc9P2W/icons.css" rel="stylesheet">
+<meta name="Description" content="澳門八大美食式，食神也難忘！想到澳門吃好味，長榮送你去！"/>
+<meta name="Keywords" content=" 澳門,澳門美食年,澳門美食,周末,澳門旅遊,出國,渡假,葡式料理,機票,長榮航空,EVA,直飛,票價,折扣,超值優惠,經濟艙,優惠機票,優惠,假期,觀光,周末旅遊,優惠促銷,美食,旅遊,購物,出國,小旅行,自由行,桃園出發,台中出發,高雄出發,小港機場,清泉崗機場,澳門機場,澳門賭場,3天2夜,機加酒,攻略,懶人包,澳門必買,澳門必吃,澳門餐廳"/>
+<script src="${portal/absolute_url}/++plone++eva.content/js/jquery.min2.js"></script>
+<script>
+alert('eeeffee');
+  var clip_area = $('#clip_area');
+  clip_area.text('${portal/absolute_url}');
+  clip_area.select();
+  document.execCommand('copy');
+  alert('網址已複製，視窗即將關閉，請另開啟Chrome瀏覽器貼上網址前往本活動')
+  window.close()
+
+</script>
+</head>
+
+
+
+<body>
+<h4>本活動不支援Line內建瀏覽器，請點按 「複製網址」，並於Chrome中重新開啟本網址</h4>
+<input id="board" type="button" value="複製網址">
+<textarea id="clip_area" value="${portal/absolute_url}" style="display:none"></textarea>
+
+${portal/absolute_url}/++plone++eva.content/js/jquery.min.js
+
+<script>
+alert('eee')
+
+//jQuery Version
+$('h4').css('background', '#31e')
+
+$(document).ready(function(){
+$('h4').css('background', '#31e')
+
+$('#board').on({
+   'touchstart' : function(){
+//$('body').css('background', '#eee')
+
+});
+})
+
+/*
+$('#board').click(function(){
+alert('ee')
+  var clip_area = $('#clip_area');
+
+  clip_area.text(${portal/absolute_url});
+  clip_area.select();
+
+  document.execCommand('copy');
+
+  alert('網址已複製，視窗即將關閉，請另開啟Chrome瀏覽器貼上網址前往本活動')
+  window.close()
+
+})*/
+</script>
+
+</body>
+</html>

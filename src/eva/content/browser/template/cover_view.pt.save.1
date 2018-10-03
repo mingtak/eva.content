@@ -496,21 +496,25 @@ fbButton_${repeat/sn/number}.addEventListener('click', async function() {
 
 
 
-<div tal:condition="view/isLine" style="display:none">
-    <a id='facebook-alert-tag' href='#facebook-alert'></a>
-    <div id="facebook-alert">
+<div style="display:none"
+     tal:condition="view/isLine">
+
+<div id="facebook-alert">
+<div>
 !!注意!! 請選擇 "畫面" 右上角「分享」，<br>
 並選擇 「在Chrome/Safari開啟」<br>
-以利活動繼續進行
-<hr id="facebook-hr">
-考量到消費者行動裝置版本不同，造成不便，敬請見諒。
-    </div>
+以利活動繼續進行<br>
+<br>
+考量到消費者行動裝置facebook APP版本不同，造成不便，敬請見諒！
+</div>
+</div>
 
-    <script>
-    $(document).ready(function(){
-        $("#facebook-alert-tag").colorbox({inline:true, width:"100%", open:true})
-    })
-    </script>
+<script>
+$(document).ready(function(){
+$("#menuopen").colorbox({inline:true, width:"90%"});
+//    $("#mfacebook-alert div").colorbox({inline:true, width:"100%", open:true})
+})
+</script>
 </div>
 
 

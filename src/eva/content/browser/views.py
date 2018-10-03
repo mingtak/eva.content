@@ -72,6 +72,7 @@ class CoverView(BrowserView):
     """ Cover View """
 
     template = ViewPageTemplateFile("template/cover_view.pt")
+    #line_template = ViewPageTemplateFile("template/line.pt")
 
     def getRandomStr(self):
         return ''.join(random.sample('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', 6))
@@ -81,6 +82,14 @@ class CoverView(BrowserView):
         portal = api.portal.get()
         context = self.context
         request = self.request
+
+        self.isLine = False
+        if 'line' in request.get('HTTP_X_REQUESTED_WITH', '').lower():
+            self.isLine = True
+
+        if 'line' in request.get('HTTP_USER_AGENT', '').lower():
+            self.isLine = True
+
         return self.template()
 
 

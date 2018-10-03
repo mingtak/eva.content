@@ -421,7 +421,7 @@ footer{
 	color:#000;
 }
 .eight-data input{
-	width:350px;
+	width:100%;
 	padding:0.5em 0;
 	font-size:20px;
 	color:#000;
@@ -822,3 +822,20 @@ footer{
 }}
 
 .again-memo { color: #5d251b }
+
+
+a.finish-btn{
+    margin-bottom: 10px;
+}
+
+/* Line version */
+#facebook-alert {
+    background: #d55;
+    color: #fff;
+    padding: 10px;
+}
+hr#facebook-hr {
+    border: solid #fff 1px;
+    margin: 10px 0;
+    padding:initial;
+}
