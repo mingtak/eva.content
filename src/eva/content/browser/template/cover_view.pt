@@ -270,7 +270,7 @@ $(document).ready(function(){
 
 <div class="method" id="method"><div class="container">
 <div class="method-title"><span class="method-title">澳門八大美食式，上菜啦 !! </span></div>
-<div class="method-titletext">活動期間：107年10月2日起至107年11月1日24:00止</div>
+<div class="method-titletext">活動期間：107年10月3日起至107年11月2日24:00止</div>
 <div class="step">
 <div class="step-round"><div class="step-round-font">Step1</div>
 <div class="step-round-text">選出上述一道你最愛的澳門美食式<span>大廚式 / 土生菜式 / 地道式 / 經典回味式 / 手信式 / 寫意式 / 節日盛事式 / 米其林式</span></div>
@@ -283,7 +283,7 @@ $(document).ready(function(){
 </div>
 </div>
 <div class="method-second"><i class="icon-icon-arrowtop"> </i><a href="#" id="menu_gotop">選出最愛的澳門美食~送你去澳門嚐好味!</a>
-<span>【送你去澳門嚐好味!】<br>三天兩夜來回機票+行程，共計兩名；<br>得獎名單於107年11月7日於長榮官網公布。</span></div>
+<span>【送你去澳門嚐好味!】<br>三天兩夜澳門來回機票+行程，共計兩名；<br>得獎名單於107年11月9日於活動頁面公布。</span></div>
 </div></div>
 
 <div class="video" id="video">
@@ -295,20 +295,30 @@ $(document).ready(function(){
 <div class="method-title"><span class="method-title">長榮北中南天天飛澳門  想吃好味 說走就走~</span></div>
 <div class="travel-region">
 <div class="travel-region-title">台北-澳門</div>
-<div class="travel-links"><a href="http://bit.ly/2NHiJSH" target="_blank">雄獅旅遊 (02)8793-9669</a><a href="http://bit.ly/2Du1UWE" target="_blank">可樂旅遊 (02)2567-2626</a></div>
+<div class="travel-links"><a href="http://bit.ly/2P3vZxG" target="_blank">雄獅旅遊 (02)8793-9669</a><a href="http://bit.ly/2Du1UWE" target="_blank">可樂旅遊 (02)2567-2626</a></div>
 </div>
 <div class="travel-region">
 <div class="travel-region-title">台中-澳門</div>
 <div class="travel-links">
-<a href="http://bit.ly/2xEMcTb" target="_blank">五福旅遊 (04)2326-6111</a><a href="http://bit.ly/2zvnsy7" target="_blank">雄獅旅遊 (04)2415-9888</a><a href="http://bit.ly/2DtQqCI" target="_blank">喜鴻旅遊 (04)2326-5722 </a><a href="http://bit.ly/2OV69Mp" target="_blank">易遊網 (04)2328-7778</a>
-<a href="http://bit.ly/2NEkgJ6" target="_blank">大安旅遊 (04)2295-2117</a><a href="http://bit.ly/2Q35TuO" target="_blank">新魅力旅遊 (04)2319-5047</a><a href="http://bit.ly/2ORnjdu" target="_blank">星捷飛旅遊 (04)2310-9466</a><a href="http://bit.ly/2IgcRd1" target="_blank">昱欣旅行社 (04)833-3565</a>
-<a href="http://bit.ly/2N0QAAZ" target="_blank">泰元旅行社 (04)2231-2555 </a><a href="http://bit.ly/2xNKNsQ" target="_blank">中天旅行社 (04)2310-5353</a></div>
+<a href="http://bit.ly/2NEkgJ6" target="_blank">大安旅遊 (04)2295-2117</a>
+<a href="http://bit.ly/2xEMcTb" target="_blank">五福旅遊 (04)2326-6111</a>
+<a href="http://bit.ly/2xNKNsQ" target="_blank">中天旅行社 (04)2310-5353</a>
+<a href="http://bit.ly/2OrI96m" target="_blank">可樂旅遊 (04)2310-7677</a>
+<a href="http://bit.ly/2O02twn" target="_blank">長汎假期 (04)2259-9125</a>
+<a href="http://bit.ly/2OV69Mp" target="_blank">易遊網 (04)2328-7778</a>
+<a href="http://bit.ly/2IgcRd1" target="_blank">昱欣旅行社 (04)833-3565</a>
+<a href="http://bit.ly/2OfFpch" target="_blank">星捷飛旅遊 (04)2310-9266</a>
+<a href="http://bit.ly/2N0QAAZ" target="_blank">泰元旅行社 (04)2231-2555</a>
+<a href="http://bit.ly/2zvnsy7" target="_blank">雄獅旅遊 (04)2415-9888</a>
+<a href="http://bit.ly/2DtQqCI" target="_blank">喜鴻旅遊 (04)2326-5722</a>
+<a href="http://bit.ly/2Q35TuO" target="_blank">新魅力旅遊 (04)2319-5047</a>
+</div>
 </div>
 <div class="travel-region">
 <div class="travel-region-title">高雄-澳門</div>
 <div class="travel-links"><a href="http://bit.ly/2xHQPMl" target="_blank">雄獅旅遊 (07)213-7799</a>
-<a href="http://bit.ly/2OamRKy" target="_blank">可樂旅遊 (07)412-8111</a>
-<a href="http://bit.ly/2OOsZVL" target="_blank">東南旅遊 (07)412-8688</a></div>
+<a href="http://bit.ly/2OamRKy" target="_blank">可樂旅遊 (07)557-5577</a>
+<a href="http://bit.ly/2OOsZVL" target="_blank">東南旅遊 412-8688</a></div>
 </div>
 </div></div>
 
@@ -360,7 +370,7 @@ $(document).ready(function(){
   </div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-<div class="eight-btn" id="fb-share-button-7"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+<div class="eight-btn" id="fb-share-button-7" data-mobile-iframe="true"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
 </div>
 </div>
 
@@ -369,7 +379,7 @@ $(document).ready(function(){
 葡萄牙人管理所帶來的文化交融，也展現在澳門的飲食文化裡。當年在澳門落地生根甚至通婚的葡萄牙人後代，被稱為「土生葡人」，他們糅合中葡菜特色，運用東南亞及印度的香料，如咖哩、椰汁、丁香、肉桂等來烹調，演變為獨一無二「澳門土生菜」。經典菜式有葡國雞、葡國血鴨、咖喱蟹、蒜蓉辣大蝦、碳烤牛肋骨、紅酒繪牛尾、紅豆豬手、沙甸魚和馬介休等，是到澳門遊玩必吃的美食選項之一。</div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-<div class="eight-btn" id="fb-share-button-8"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+<div class="eight-btn" id="fb-share-button-8" data-mobile-iframe="true"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
 </div>
 </div>
 
@@ -379,7 +389,7 @@ $(document).ready(function(){
 小小的澳門擁有眾多的米其林餐廳，在2018年的指南中一共收編65間各有特色的餐廳。在全球只有大約一百家餐廳的三星餐廳，澳門就有2間，還有5間二星以及11間一星餐廳，必比登推介餐廳也有9間；餐飲菜系相當多元，包括 : 中式、法式、日式、澳菜、印度菜色等，品嚐米其林美食絕對是來澳門不可錯過的美食體驗。</div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-<div class="eight-btn" id="fb-share-button-4"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+<div class="eight-btn" id="fb-share-button-4" data-mobile-iframe="true"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
 </div>
 </div>
 
@@ -390,7 +400,7 @@ $(document).ready(function(){
 </div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-<div class="eight-btn" id="fb-share-button-1"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+<div class="eight-btn" id="fb-share-button-1" data-mobile-iframe="true"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
 </div>
 </div>
 
@@ -400,7 +410,7 @@ $(document).ready(function(){
 享用澳門美食可以很自在，在建築古蹟巷道中、在熱門休閒景點裡、在美麗的海灘旁，帶著各式特色小吃，一邊欣賞美景一邊品嚐美食，隨興愜意。尤其澳門是葡式蛋撻發源地，融合了蛋香、奶香和焦糖香於一體的蛋撻，一口咬下，酥皮鬆脆中交融著香滑甜軟的濃郁蛋奶香，充滿著滿滿的幸福口感。</div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-<div class="eight-btn" id="fb-share-button-3"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+<div class="eight-btn" id="fb-share-button-3" data-mobile-iframe="true"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
 </div>
 </div>
 
@@ -411,7 +421,7 @@ $(document).ready(function(){
 ，最能品味在地澳門人的生活況味。</div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-<div class="eight-btn" id="fb-share-button-6"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+<div class="eight-btn" id="fb-share-button-6" data-mobile-iframe="true"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
 </div>
 </div>
 
@@ -424,7 +434,7 @@ $(document).ready(function(){
 </div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-    <div class="eight-btn" id="fb-share-button-5"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
+    <div class="eight-btn" id="fb-share-button-5" data-mobile-iframe="true"><a class="share-fb" href="javascript:void(0)">我想去澳門嚐好味!</a></div>
 </div>
 </div>
 
@@ -437,7 +447,7 @@ $(document).ready(function(){
 </div>
 <div class="eight-bottom">
 快快分享至個人Facebook，就有機會送你去澳門嚐好味!
-  <div class="eight-btn" id="fb-share-button-2">
+  <div class="eight-btn" id="fb-share-button-2" data-mobile-iframe="true">
       <a class="share-fb" href="#?q=${view/getRandomStr}">我想去澳門嚐好味!</a>
   </div>
 
