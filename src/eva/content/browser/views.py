@@ -71,6 +71,8 @@ class Sign(BrowserView):
 class CoverView(BrowserView):
     """ Cover View """
 
+    award_template = ViewPageTemplateFile("template/award_list.pt")
+
     template = ViewPageTemplateFile("template/cover_view.pt")
     #line_template = ViewPageTemplateFile("template/line.pt")
 
@@ -79,6 +81,8 @@ class CoverView(BrowserView):
 
 
     def __call__(self):
+        return self.award_template()
+
         portal = api.portal.get()
         context = self.context
         request = self.request
@@ -98,9 +102,16 @@ class UserList(BrowserView):
 
     template = ViewPageTemplateFile("template/user_list.pt")
 
+
+    def award(self):
+        context = self.context
+        result = json.loads(context.description)
+        award1 = random.choice(result.keys())
+        award2 = random.choice(result.keys())
+        return [award1, award2]
+
     def __call__(self):
         portal = api.portal.get()
         context = self.context
         request = self.request
         return self.template()
-

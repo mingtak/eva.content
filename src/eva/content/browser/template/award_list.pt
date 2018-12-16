@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+<?python
+from plone import api
+portal = api.portal.get()
+
+url = []
+for i in range(9):
+    url.append( '%s?detail_=%s' % (portal.absolute_url(), i) )
+?>
+
+<head>
+<meta charset="utf-8">
+<title>長榮北中南天天飛，去澳門嚐好味 easy go！</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link href="${portal/absolute_url}/++plone++eva.content/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="${portal/absolute_url}/++plone++eva.content/css/css.css" rel="stylesheet" type="text/css">
+<link href="${portal/absolute_url}/++plone++eva.content/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+<link href="https://file.myfontastic.com/S35DUwYmK65fFFQsBc9P2W/icons.css" rel="stylesheet">
+<meta name="Description" content="澳門八大美食式，食神也難忘！想到澳門吃好味，長榮送你去！"/>
+<meta name="Keywords" content=" 澳門,澳門美食年,澳門美食,周末,澳門旅遊,出國,渡假,葡式料理,機票,長榮航空,EVA,直飛,票價,折扣,超值優惠,經濟艙,優惠機票,優惠,假期,觀光,周末旅遊,優惠促銷,美食,旅遊,購物,出國,小旅行,自由行,桃園出發,台中出發,高雄出發,小港機場,清泉崗機場,澳門機場,澳門賭場,3天2夜,機加酒,攻略,懶人包,澳門必買,澳門必吃,澳門餐廳"/>
+<meta name="robots" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="bingbot" content="all" />
+<meta name="slurp" content="all" />
+<meta name="msnbot" content="all" />
+<meta name="webcrawlers" content="all" />
+<meta name="spiders" content="all" />
+<meta name="revisit-after" content="7 days"/>
+<!-- <meta property="og:image" content="${portal/absolute_url}/images/food/${python:view.request.get('detail')}"> -->
+<meta property="og:image" content="${portal/absolute_url}/images/fbshare.jpg"/>
+<meta property="og:description" content="澳門八大美食式，食神也難忘！想到澳門吃好味，長榮送你去！"/>
+
+<!-- Global site tag (gtag.js) - Google Analytics --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126747303-1"></script> 
+<script> 
+window.dataLayer = window.dataLayer || []; 
+function gtag(){dataLayer.push(arguments);} 
+gtag('js', new Date()); 
+
+gtag('config', 'UA-126747303-1'); 
+</script>
+
+<script src="${portal/absolute_url}/++plone++eva.content/js/jquery.min.js"></script> 
+<script src="${portal/absolute_url}/++plone++eva.content/js/bootstrap.min.js"></script>
+<script src="${portal/absolute_url}/++plone++eva.content/colorbox/jquery.colorbox-min.js"></script>
+<script type="text/javascript">
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PKPKLMZ');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '237267096800648');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=237267096800648&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKPKLMZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script type="text/javascript">
+  var _fout_queue = _fout_queue || {}; if (_fout_queue.segment === void 0) _fout_queue.segment = {};
+  if (_fout_queue.segment.queue === void 0) _fout_queue.segment.queue = [];
+
+  _fout_queue.segment.queue.push({
+    'user_id': 28224,
+    'advertiser_id': 11252,
+    'contractor_id': 5
+  });
+
+  (function() {
+    var el = document.createElement('script'); el.type = 'text/javascript'; el.async = true;
+    el.src = (('https:' == document.location.protocol) ? 'https://' : 'http://') + 'js.fout.jp/segmentation.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(el, s);
+  })();
+</script>
+
+
+
+
+<div style="width:100%">
+  <img style="width:100%" src="http://eva-macau.playgroup.com.tw/images/award_list.png">
+</div>
+
+
+
+</body>
+</html>

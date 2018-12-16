@@ -503,7 +503,8 @@ fbButton_${repeat/sn/number}.addEventListener('click', async function() {
 並選擇 「在Chrome/Safari開啟」<br>
 以利活動繼續進行
 <hr id="facebook-hr">
-考量到消費者行動裝置版本不同，造成不便，敬請見諒。
+考量到消費者行動裝置版本不同，造成不便，敬請見諒。<br>
+附註提醒：使用Safari開啟若遇到Facebook無法輸入帳號、密碼,請重新整理即可登入！謝謝！
     </div>
 
     <script>

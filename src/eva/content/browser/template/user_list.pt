@@ -15,6 +15,43 @@
 import json
 result = json.loads(context.description)
 ?>
+
+<form action="${context/absolute_url}" method="post">
+    <input hidden name="award" value="1">
+    <input type="submit" name="submit" value="抽出獎項">
+</form>
+
+<br><br><br>
+
+<div tal:condition="python:view.request.form.get('award')">
+    <h2>恭喜以下二位中獎者</h2>
+
+<style>
+.award th, .award td {font-size:18px; border:solid 1px;padding:5px}
+</style>
+<table class="award">
+    <tr style="background:#81e385">
+        <th>姓名</th>
+        <th>Email</th>
+        <th>電話</th>
+        <th>出發點</th>
+        <th>登錄時間</th>
+    </tr>
+    <tr tal:repeat="item view/award">
+        <td>${python:result[item][0]}</td>
+        <td>${item}</td>
+        <td>${python:result[item][1]}</td>
+        <td>${python:result[item][2]}</td>
+        <td>${python:result[item][3]}</td>
+    </tr>
+</table>
+</div>
+
+
+
+
+<br><br><br>
+<h2>登錄活動者列表</h2>
 <table>
     <tr>
         <th>姓名</th>
